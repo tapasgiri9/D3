@@ -1,6 +1,8 @@
 var fs= require('fs');
  //var count=0;
  var dataArray = {};  // ROBBERY and burglary
+ var dataArrayTwo={};
+
  var robbery   = [];
  var burglary   =[];
 
@@ -146,14 +148,35 @@ if(columns[5]==='ROBBERY'){
 lineReader.on("close",function(){
 
   //Convert robbery and burglary into json
-  dataArray["robbery"] =robbery;
-  dataArray["burglary"] =burglary;
-  var arr = [];
-  arr.push(dataArray);
-  console.log(JSON.stringify(arr));
+
+
+
+
+
+  var arr = [
+    {
+      "key":"robbery",
+      "values":[]
+    },
+    {
+      "key":"Burglary",
+      "values":[]
+    }
+
+      // "Burglary": burglary
+  ];
+
+
+    arr[0]["values"] =robbery;
+    arr[1]["values"] =burglary;
+
+  //arr[0]["values"=robbery].push(dataArray);
+  //arr[1][burglary].push(dataArrayTwo);
+
+  //console.log(JSON.stringify(arr));
 
   //Write into a json file
-  //fs.writeFile("robbery-burglary.json",JSON.stringify(arr),"utf-8" );
+  fs.writeFile("robbery-burglary.json",JSON.stringify(arr),"utf-8" );
 
 
 
