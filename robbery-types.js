@@ -1,22 +1,22 @@
 var fs= require('fs');
  //var count=0;
  var dataRobbery = {};  // Crimanal damage- vehicle,property,state sup property
- 
+
     var robberyTypes=[];
-   robberyTypes[0]={"type":"ARMED:KNIFE/CUTTING INSTRUMENT","percentage":0};
-   robberyTypes[1]={"type":"ARMED: OTHER DANGEROUS WEAPON","percentage":0};
-   robberyTypes [2]={"type":"ARMED: HANDGUN","percentage":0};
-   robberyTypes [3]={"type":"ARMED: OTHER FIREARM","percentage":0};
- robberyTypes [4]={"type": "STRONGARM - NO WEAPON","percentage":0};
- robberyTypes [5]={"type": "VEHICULAR HIJACKING","percentage":0};
-   robberyTypes[6] ={"type":"AGGRAVATED VEHICULAR HIJACKING","percentage":0};
- robberyTypes [7]={"type":"AGGRAVATED","percentage":0};
-   robberyTypes [8]={"type":"ATTEMPT: AGGRAVATED","percentage":0};
- robberyTypes [9]={"type":"ATTEMPT: ARMED-KNIFE/CUT INSTR","percentage":0};
- robberyTypes [10]={"type":"ATTEMPT: ARMED-OTHER DANG WEAP","percentage":0};
-   robberyTypes[11]={"type": "ATTEMPT: ARMED-HANDGUN","percentage":0};
- robberyTypes[12]={"type":"ATTEMPT: ARMED-OTHER FIREARM","percentage":0};
-   robberyTypes[13] ={"type":"ATTEMPT: STRONGARM-NO WEAPON","percentage":0};
+   robberyTypes[0]={"type":"ARMED:KNIFE/CUTTING INSTRUMENT","total":0};
+   robberyTypes[1]={"type":"ARMED: OTHER DANGEROUS WEAPON","total":0};
+   robberyTypes [2]={"type":"ARMED: HANDGUN","total":0};
+   robberyTypes [3]={"type":"ARMED: OTHER FIREARM","total":0};
+ robberyTypes [4]={"type": "STRONGARM - NO WEAPON","total":0};
+ robberyTypes [5]={"type": "VEHICULAR HIJACKING","total":0};
+   robberyTypes[6] ={"type":"AGGRAVATED VEHICULAR HIJACKING","total":0};
+ robberyTypes [7]={"type":"AGGRAVATED","total":0};
+   robberyTypes [8]={"type":"ATTEMPT: AGGRAVATED","total":0};
+ robberyTypes [9]={"type":"ATTEMPT: ARMED-KNIFE/CUT INSTR","total":0};
+ robberyTypes [10]={"type":"ATTEMPT: ARMED-OTHER DANG WEAP","total":0};
+   robberyTypes[11]={"type": "ATTEMPT: ARMED-HANDGUN","total":0};
+ robberyTypes[12]={"type":"ATTEMPT: ARMED-OTHER FIREARM","total":0};
+   robberyTypes[13] ={"type":"ATTEMPT: STRONGARM-NO WEAPON","total":0};
 
 
 

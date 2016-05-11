@@ -1,7 +1,7 @@
 var fs= require('fs');
  //var count=0;
- var dataArray = {};  // ROBBERY and burglary
- var dataArrayTwo={};
+ // var dataArray = {};  // ROBBERY and burglary
+ // var dataArrayTwo={};
 
  var robbery   = [];
  var burglary   =[];
@@ -17,7 +17,7 @@ else {
 }
 }
 
-var lines = new Array();
+//var lines = new Array();
 var lineReader = require('readline').createInterface({
   input: require('fs').createReadStream('Crimes_-_2001_to_present.csv')
 });

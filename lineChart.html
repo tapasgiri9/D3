@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+
+<style>
+.axis path {
+    fill: none;
+    stroke: #777;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: Lato;
+    font-size: 13px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+
+          <svg id="visualisation" width="1000" height="500"></svg>
+          <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+          <script>
+          d3.json("robbery-burglary.json",function(data){
+
+              var vis = d3.select("#visualisation"),
+                      WIDTH = 1000,
+                      HEIGHT = 500,
+                      MARGINS = {
+                          top: 20,
+                          right: 20,
+                          bottom: 20,
+                          left: 50
+                      },
+
+          xScale = d3.scale.linear().range([MARGINS.left, WIDTH - MARGINS.right]).domain([2001,2016]),
+          yScale = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([1000,30000]),
+
+          xAxis = d3.svg.axis()
+                    .scale(xScale),
+
+          yAxis = d3.svg.axis()
+                    .scale(yScale)
+                    .orient("left");
+
+                   vis.append("svg:g")
+                      .attr("class", "x axis")
+                      .attr("transform", "translate(0," + (HEIGHT - MARGINS.bottom) + ")")
+                      .call(xAxis);
+
+                  vis.append("svg:g")
+                      .attr("class", "y axis")
+                      .attr("transform", "translate(" + (MARGINS.left) + ",0)")
+                      .call(yAxis);
+
+                  lineGen(data[0].values)
+
+
+                      function lineGen(robbery) {
+
+
+                          var lineGenx = d3.svg.line()
+                                                .x(function(d) {
+                                                    return xScale(d.year);
+                                                })
+                                                .y(function(d) {
+                                                    return yScale(d.total);
+                                                  });
+
+                                                  vis.append('svg:path')
+                                                      .attr('d', lineGenx(robbery))
+                                                      .attr('stroke', 'green')
+                                                      .attr('stroke-width', 2)
+                                                      .attr('fill', 'none');
+
+
+                      }
+
+                      lineGen1(data[1].values)
+
+
+                          function lineGen1(burglary) {
+
+
+                              var lineGenxt = d3.svg.line()
+                                                    .x(function(d) {
+                                                        return xScale(d.year);
+                                                    })
+                                                    .y(function(d) {
+                                                        return yScale(d.total);
+                                                      });
+
+                                                      vis.append('svg:path')
+                                                          .attr('d', lineGenxt(burglary))
+                                                          .attr('stroke', 'blue')
+                                                          .attr('stroke-width', 2)
+                                                          .attr('fill', 'none');
+
+
+                          }
+
+
+
+
+
+
+
+            });
+          </script>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
