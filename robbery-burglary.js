@@ -115,7 +115,7 @@ if(columns[5]==='ROBBERY'){
                    break;
      case "2008": burglary[7].total = burglary[7].total+1;
                   break;
-     case "2009":  burglary[8].total = burglary[7].total+1;
+     case "2009":  burglary[8].total = burglary[8].total+1;
                     break;
 
      case "2010":   burglary[9].total = burglary[9].total+1;
@@ -163,7 +163,7 @@ lineReader.on("close",function(){
       "values":[]
     }
 
-      // "Burglary": burglary
+
   ];
 
 
