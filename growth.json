@@ -1,0 +1,97 @@
+[
+  {
+    "Country": "Argentina",
+    "Population Aggregate": 3.414755732801607,
+    "Purchase Aggregate": 20.474897183207876
+  },
+  {
+    "Country": "Australia",
+    "Population Aggregate": 3.922452660054107,
+    "Purchase Aggregate": 15.435921326228002
+  },
+  {
+    "Country": "Brazil",
+    "Population Aggregate": 2.5288535521928734,
+    "Purchase Aggregate": 12.806991868431414
+  },
+  {
+    "Country": "Canada",
+    "Population Aggregate": 3.315727699530524,
+    "Purchase Aggregate": 11.987100916360237
+  },
+  {
+    "Country": "China",
+    "Population Aggregate": 1.4803379794318714,
+    "Purchase Aggregate": 34.50554875399867
+  },
+  {
+    "Country": "France",
+    "Population Aggregate": 1.4815994902023255,
+    "Purchase Aggregate": 7.433332707789895
+  },
+  {
+    "Country": "Germany",
+    "Population Aggregate": -0.012230919765172597,
+    "Purchase Aggregate": 10.555965077196703
+  },
+  {
+    "Country": "India",
+    "Population Aggregate": 4.094009340456272,
+    "Purchase Aggregate": 25.111082931147237
+  },
+  {
+    "Country": "Indonesia",
+    "Population Aggregate": 4.338495202827808,
+    "Purchase Aggregate": 27.063258106606096
+  },
+  {
+    "Country": "Italy",
+    "Population Aggregate": 1.0938017898574686,
+    "Purchase Aggregate": 2.028157428147424
+  },
+  {
+    "Country": "Japan",
+    "Population Aggregate": -0.5544709098008652,
+    "Purchase Aggregate": 8.863008830203142
+  },
+  {
+    "Country": "Mexico",
+    "Population Aggregate": 3.294159544159547,
+    "Purchase Aggregate": 18.01112168089332
+  },
+  {
+    "Country": "Russia",
+    "Population Aggregate": -1.0216934919524199,
+    "Purchase Aggregate": 17.800776196636484
+  },
+  {
+    "Country": "Saudi Arabia",
+    "Population Aggregate": -2.2859216255442636,
+    "Purchase Aggregate": 18.71319555361954
+  },
+  {
+    "Country": "South Africa",
+    "Population Aggregate": 3.6407281456291263,
+    "Purchase Aggregate": 15.29429588667525
+  },
+  {
+    "Country": "Republic of Korea",
+    "Population Aggregate": 1.6798218984011444,
+    "Purchase Aggregate": 14.901963455081637
+  },
+  {
+    "Country": "Turkey",
+    "Population Aggregate": 3.8493150684931536,
+    "Purchase Aggregate": 21.690880989180833
+  },
+  {
+    "Country": "United Kingdom",
+    "Population Aggregate": 2.4092515258593,
+    "Purchase Aggregate": 7.547059484988191
+  },
+  {
+    "Country": "USA",
+    "Population Aggregate": 2.2987763535982966,
+    "Purchase Aggregate": 11.992747050989278
+  }
+]
